@@ -1,1 +1,664 @@
-Hello World
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Andrés Villa Music</title>
+
+    <style>
+    
+    body {
+        position: relative;
+    }
+    
+    #topContainer {
+        background: url(images/instruments2.jpg) no-repeat center center scroll;
+        background-size:cover;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+        width: 100%;
+    }
+    
+    .landingText {
+        padding-top: 50px;
+    }
+    
+    #audibleContainer {
+        width: 100%;
+        background-color: #F5F5F5;
+    }
+    
+    .topRow {
+        padding-top: 60px;
+    }
+    
+    .logo1 {
+        max-width: 100%;
+    }
+    
+    .green-text {
+        color: #00A99E;
+    }
+    
+    .orange-text {
+        color: #F45434;
+    }
+    
+    .coverText {
+        opacity: 0.8;
+    }
+    
+    .botRow {
+        margin-top: 70px;
+        opacity:0.9;
+    }
+    
+    .botRow a {
+        color:#333;
+    }
+    
+    .botRow a:hover {
+        color:#777;
+    }
+    
+    .botRow a:active {
+        color:#333;
+    }
+    
+    .icon {
+        font-size: 5em;
+    }
+    
+    #landingIcon1 {
+        padding-left: 300px;
+    }
+    
+    #landingIcon2 {
+        padding-right: 300px;
+    }
+    
+    .audibleRow {
+        padding-top: 30px;
+    }
+    
+    .mini-menu {
+        padding-top: 20px;
+    }
+    
+    .mini-menu a {
+        color:#777;
+    }
+    
+    .mini-menu a:hover {
+        color: #333;
+        text-decoration: none;
+    }
+    
+    .mini-menu a:focus {
+        text-decoration: none;
+        color:#777;
+    }
+    
+    .iconCorner {
+        text-align: center;
+    }
+    
+    .carousel {
+        height: 720px;
+    }
+    
+    .carousel-caption {
+        z-index: 10;
+    }
+    
+    .carousel .item {
+        height: 720px;
+    }
+    
+    .carousel-inner > .item > img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        min-width: 100%;
+        height: 720px;
+    }
+    
+    #legibleContainer {
+        background-color: #F5F5F5;
+        width: 100%;
+        padding-bottom: 20px;
+    }
+    
+    .legibleRow {
+        padding-top: 60px;
+    }
+    
+    #footer-divider {
+        padding-top: 0;
+        margin-top: 0;
+    }
+    
+    .footer {
+    bottom: 0;
+    width: 100%;
+    height: 60px;
+    padding-top: 10px;
+    }
+
+    </style>
+    
+  </head>
+  
+  <body>
+  
+                                    <!-- TOP SECTION -->
+    
+    <div class= "container-fluid" id= "topContainer">
+        
+        <div class= "row topRow">
+        
+            <div class= "col-md-2 col-md-offset-1 landingText">
+            
+                <h3 class="coverText">Creating everything <span class="green-text">audible</span> for anything <span class="orange-text">visible</span></h3>
+            
+            </div>
+            
+            <div class= "col-md-4 col-md-offset-1">
+            
+                <img src="images/AndyVillaMusic_3.png" class="img-responsive logo1">
+            
+            </div>
+            
+            <div class= "col-md-2 col-md-offset-1 landingText">
+            
+                <h3 class="coverText">Music for film, tv, video games & advertisements</h3>
+            
+            </div>
+        
+        </div>
+        
+        <div class="row text-center botRow">
+        
+            <div class="col-md-4" id= "landingIcon1">
+                            
+                <a href="#audibleContainer" class="page-scroll" onclick="this.blur();">
+                
+                    <i class="glyphicon glyphicon-equalizer icon"></i>
+                                
+                    <h3 class="green-text">audible</h3>
+                    
+                </a>
+            
+            </div>
+            
+            <div class="col-md-4">
+                            
+                <a href="#visibleContainer" class="page-scroll" onclick="this.blur();">
+                
+                    <i class="glyphicon glyphicon-film icon"></i>
+                            
+                    <h3 class="orange-text">visible</h3>
+                    
+                </a>
+            
+            </div>
+            
+            <div class="col-md-4" id= "landingIcon2">
+            
+                <a href="#legibleContainer" class="page-scroll" onclick="this.blur();">
+                
+                    <i class="glyphicon glyphicon-info-sign icon"></i>
+            
+                    <h3 class="green-text">info</h3>
+                    
+                </a>
+            
+            </div>
+        
+        </div>
+
+    </div>
+    
+                            <!-- AUDIBLE SECTION -->
+    
+    <div class= "container-fluid" id="audibleContainer">
+        
+        <div class= "row audibleRow">
+        
+            <div class="col-md-1 iconCorner">
+                            
+                <i class="glyphicon glyphicon-equalizer icon"></i>
+                
+                <h3 class="green-text">audible</h3>
+                                
+                <ul class="nav mini-menu">
+                
+                    <li><a href="#visibleContainer" class="page-scroll" onclick="this.blur();"><h5><span class="glyphicon glyphicon-film"></span><br>visible</h5></a></li>
+                
+                    <li><a href="#legibleContainer" class="page-scroll" onclick="this.blur();"><h5><span class="glyphicon glyphicon-info-sign"></span><br>info</h5></a></li>
+                
+                    <li><a href="#topContainer" class="page-scroll" onclick="this.blur();"><h5><span class="glyphicon glyphicon-chevron-up"></span><br>top</h5></a></li>
+                    
+                </ul>
+            
+            </div>
+            
+            <div class= "col-md-3">
+            
+                <h4 class= "lead">piano.</h4>
+                
+                <iframe width="100%" height="300" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/152936529&amp;color=646464&amp;auto_play=false&amp;hide_related=true&amp;show_comments=false&amp;show_user=false&amp;show_reposts=false&amp;visual=true"></iframe>
+                
+            </div>
+            
+            <div class= "col-md-4">
+            
+                <h4 class= "lead">orchestral.</h4>
+                
+                <iframe width="100%" height="300" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/152933809&amp;auto_play=false&amp;hide_related=true&amp;show_comments=false&amp;show_user=false&amp;show_reposts=false&amp;visual=true"></iframe>
+
+                            
+            </div>
+            
+            <div class= "col-md-3">
+            
+                <h4 class= "lead">acoustic/band.</h4>
+                
+                <iframe width="100%" height="300" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/152935797&amp;auto_play=false&amp;hide_related=true&amp;show_comments=false&amp;show_user=false&amp;show_reposts=false&amp;visual=true"></iframe>
+               
+            </div>
+            
+        </div>
+        
+        <div class= "row audibleRow">   
+            
+            <div class= "col-md-3 col-md-offset-1">
+            
+                <h4 class= "lead">electronic.</h4>
+                
+                <iframe width="100%" height="300" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/152938712&amp;auto_play=false&amp;hide_related=true&amp;show_comments=false&amp;show_user=false&amp;show_reposts=false&amp;visual=true"></iframe>
+            
+            </div>
+            
+            <div class= "col-md-4">
+            
+                <h4 class= "lead">tales of auria.</h4>
+                
+                <iframe width="100%" height="300" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/2229852&amp;auto_play=false&amp;hide_related=true&amp;show_comments=false&amp;show_user=false&amp;show_reposts=false&amp;visual=true"></iframe>
+
+            </div>
+            
+            <div class= "col-md-3">
+
+                <h4 class= "lead">natixis.</h4>
+                
+                <iframe width="100%" height="300" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/51098606&amp;auto_play=false&amp;hide_related=true&amp;show_comments=false&amp;show_user=false&amp;show_reposts=false&amp;visual=true"></iframe>            
+            
+            </div>
+            
+        </div>
+    
+    </div>
+    
+                                <!-- VISIBLE CONTAINER -->
+    
+    <div class= "container-fluid" id="visibleContainer">
+    
+        <div class= "row audibleRow">
+        
+            <div class="col-md-1 iconCorner">
+                            
+                <i class="glyphicon glyphicon-film icon"></i>
+                            
+                <h3 class="orange-text">visible</h3>
+                
+                <ul class="nav mini-menu">
+                
+                    <li><a href="#audibleContainer" class="page-scroll" onclick="this.blur();"><h5><span class="glyphicon glyphicon-equalizer"></span><br>audible</h5></a></li>
+                
+                    <li><a href="#legibleContainer" class="page-scroll" onclick="this.blur();"><h5><span class="glyphicon glyphicon-info-sign"></span><br>info</h5></a></li>
+                
+                    <li><a href="#topContainer" class="page-scroll" onclick="this.blur();"><h5><span class="glyphicon glyphicon-chevron-up"></span><br>top</h5></a></li>
+                    
+                </ul>
+            
+            </div>
+            
+            <div class= "col-md-5">
+                
+                <h4 class= "lead">demo reel.</h4>
+                    
+                <div class="embed-responsive embed-responsive-16by9">
+      
+                    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/cA4091M-94E?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+                
+                </div>
+
+            </div>
+            
+            <div class= "col-md-5">
+                
+                <h4 class= "lead">target.</h4>
+                    
+                <div class="embed-responsive embed-responsive-16by9">
+      
+                    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/UzDEX7n6hHs?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+                
+                </div>
+                    
+            </div>
+            
+        </div>
+            
+        <div class= "row audibleRow">
+            
+            <div class= "col-md-5 col-md-offset-1">
+                
+                <h4 class= "lead">blue sky lullaby.</h4>
+                    
+                <div class="embed-responsive embed-responsive-16by9">
+      
+                    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/2Xggxij_ROw?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+                
+                </div>
+                    
+            </div>
+            
+            <div class= "col-md-5">
+                
+                <h4 class= "lead">johnnie walker.</h4>
+                    
+                <div class="embed-responsive embed-responsive-16by9">
+      
+                    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/MTBJE-JQrk4?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+                
+                </div>
+                    
+            </div>
+                
+        </div>
+        
+        <div class= "row audibleRow">
+            
+            <div class= "col-md-5 col-md-offset-1">
+                
+                <h4 class= "lead">explore new worlds.</h4>
+                    
+                <div class="embed-responsive embed-responsive-16by9">
+      
+                    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/KWRfXUxznbM?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+                
+                </div>
+                    
+            </div>
+            
+            <div class= "col-md-5">
+                
+                <h4 class= "lead">cocina al natural.</h4>
+                    
+                <div class="embed-responsive embed-responsive-16by9">
+      
+                    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/AkSQWYj_fBY?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+                
+                </div>
+                    
+            </div>
+                
+        </div>
+        
+        <div class= "row audibleRow">
+        
+            <div class= "col-md-4 col-md-offset-7">
+            
+                <p><i>Note: Some of these advertisements were scored for demonstrational purposes and 
+                were aired with different music. I do not own the videos but the music is all mine.</i></p>
+                
+            </div>
+        
+        </div>
+
+    </div>
+    
+                                <!-- INFO/LEGIBLE CONTAINER -->
+    
+    <div class= "container-fluid" id="legibleContainer">
+    
+        <div class= "row-fluid audibleRow">
+        
+            <div class="col-md-1 iconCorner">
+                            
+                <i class="glyphicon glyphicon-info-sign icon"></i>
+            
+                <h3 class="green-text">info</h3>
+                
+                <ul class="nav mini-menu">
+                
+                    <li><a href="#visibleContainer" class="page-scroll" onclick="this.blur();"><h5><span class="glyphicon glyphicon-film"></span><br>visible</h5></a></li>
+                    
+                    <li><a href="#audibleContainer" class="page-scroll" onclick="this.blur();"><h5><span class="glyphicon glyphicon-equalizer"></span><br>audible</h5></a></li>
+                                
+                    <li><a href="#topContainer" class="page-scroll" onclick="this.blur();"><h5><span class="glyphicon glyphicon-chevron-up"></span><br>top</h5></a></li>
+                    
+                </ul>
+            
+            </div>
+            
+            <div class= "col-md-1">
+            
+                <h4 class= "lead text-right">services.</h4>
+                
+            </div>
+            
+            <div class= "col-md-3 legibleRow"
+                
+                <p><strong>MUSIC</strong></p>
+                
+                <ul>
+                
+                    <li>advertisements</li>
+                    
+                    <li>film</li>
+                    
+                    <li>tv</li>
+                    
+                    <li>video games</li>
+                    
+                    <li>corporate videos</li>
+                    
+                    <li>electronic toys</li>
+                    
+                    <li>apps</li>
+                
+                </ul>
+            
+            </div>
+            
+            <div class= "col-md-3 legibleRow">
+                            
+                <p><strong>AUDIO</strong></p>
+                
+                <ul>
+                
+                    <li>custom sound design</li>
+                    
+                    <li>sfx</li>
+                    
+                    <li>ambience/soundscapes</li>
+                    
+                    <li>voiceover</li>
+                    
+                    <li>sound clean up and polish</li>
+                    
+                    <li>audio implementation for video games</li>
+                    
+                    <li>sonic logos</li>
+                
+                </ul>
+            
+            </div>
+            
+            <div class= "col-md-4 legibleRow">
+                            
+                <p><strong>PRODUCTION</strong></p>
+                
+                <ul>
+                
+                    <li>recording</li>
+                    
+                    <li>mixing</li>
+                    
+                    <li>editing</li>
+                    
+                    <li>vocals</li>
+                    
+                    <li>mastering</li>
+                    
+                    <li>writing/collaboration</li>
+                    
+                    <li>tuning</li>
+                
+                </ul>
+            
+            </div>
+            
+            <div class= "row audibleRow">
+            
+                <div class="col-md-1">
+            
+                    <h4 class= "lead text-right">bio.</h4>
+                
+                </div>
+            
+                <div class= "col-md-3 legibleRow">
+                
+                    <p>Andrés Villa is a Mexican composer and producer working to fill in 
+                    the aural blanks to everything visible. He graduated from the 
+                    prestigious Berklee College of Music with a degree in Contemporary 
+                    Writing & Production as well as a minor in Video Game Scoring.</p>
+            
+                </div>
+            
+                <div class= "col-md-3 legibleRow">
+                            
+                    <p>In 2011, Andrés joined an indie games company called Peagames as the 
+                    Audio Director, providing music and SFX for all their games. He started 
+                    working in 2013 at Elytron Productions as Studio Coordinator and 
+                    assisting in sessions for the Comedy Central TV Show "Brickleberry".</p>
+            
+                </div>
+            
+                <div class= "col-md-3 legibleRow">
+                            
+                    <p>In 2014, he was selected as the winner of the Natixis Global Asset 
+                    Management Soundscape Competition and is now their official music 
+                    provider. Andrés Villa Music has grown into his sole focus, joining 
+                    forces with other talented producers and engineers to provide the best 
+                    audio service possible.</p>
+            
+                </div>
+            
+            </div>
+            
+        </div>
+                
+        <div class= "row audibleRow">
+            
+            <div class= "col-md-1 col-md-offset-1">
+            
+                <h4 class= "lead text-right">contact.</h4>
+                
+            </div>
+            
+            <div class= "col-md-6 col-md-offset-1 legibleRow"
+            
+                <form method="post">
+  
+                    <div class="form-group">
+                    
+                        <input type="text" class="form-control" id="name" placeholder="Name">
+  
+                    </div>
+                    
+                    <div class="form-group">
+                    
+                        <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
+  
+                    </div>
+  
+                    <div class="form-group">
+                    
+                        <input type="text" class="form-control" id="subject" placeholder="Subject">
+  
+                    </div>
+                    
+                    <div class="form-group">
+    
+                        <textarea class="form-control" rows="3" placeholder= "Message"></textarea>
+            
+                    </div>
+  
+                    <button type="submit" class="btn btn-default">Submit</button>
+
+                </form>
+                
+            </div>
+            
+        </div>
+        
+    </div>
+    
+    <hr class="featurette-divider" id="footer-divider">
+    
+                                <!-- FOOTER -->
+    
+    <footer class="footer">
+      
+      <div class="container">
+        
+        <p class="pull-right"><a href="#topContainer" class="page-scroll" onclick="this.blur();">Back to top <span class="glyphicon glyphicon-chevron-up"></span></a></p>
+        
+        <p class="text-muted">© 2015 by ANDRÉS VILLA.  contact: andresvil@gmail.com</p>
+      
+      </div>
+   
+    </footer>
+    
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+
+    
+    <!-- Font Awesome 
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    -->
+    
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+    
+    
+    <script src="js/scrolling-nav.js"></script>
+    
+    <script src="js/jquery.easing.min.js"></script>
+    
+    <script src="jcss/scrolling-nav.css"></script>
+    
+    <script>
+    
+        $("#topContainer").css("min-height", $(window).height()); 
+        
+        $("#audibleContainer").css("min-height", $(window).height()); 
+        
+        $("#visibleContainer").css("min-height", $(window).height()); 
+        
+        $("#legibleContainer").css("min-height", $(window).height());
+    
+    </script>
+        
+  </body>
+  
+</html>
